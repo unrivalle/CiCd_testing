@@ -7,5 +7,6 @@ images:
 
 options:
   logging: CLOUD_LOGGING_ONLY
-  build:
-    logsBucket: 'gs://logs_new'
+
+substitutions:
+  _LOGS_BUCKET: 'gs://logs_new'
