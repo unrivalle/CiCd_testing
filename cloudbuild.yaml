@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/flask-app', '.']
+  args: ['build', '-t', 'gcr.io/$main-cocoa-411512/flask-app', '.']
 
 images:
 - 'gcr.io/$PROJECT_ID/flask-app'
