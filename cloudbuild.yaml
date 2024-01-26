@@ -3,4 +3,9 @@ steps:
   args: ['build', '-t', 'gcr.io/$main-cocoa-411512/flask-app', '.']
 
 images:
-- 'gcr.io/$PROJECT_ID/flask-app'
+- 'gcr.io/$main-cocoa-411512/flask-app'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  build:
+    logsBucket: 'gs://logs_new'
