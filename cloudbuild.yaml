@@ -1,9 +1,9 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$main-cocoa-411512/flask-app', '.']
+  args: ['build', '-t', 'gcr.io/main-cocoa-411512/flask-app', '.']
 
 images:
-- 'gcr.io/$main-cocoa-411512/flask-app'
+- 'gcr.io/main-cocoa-411512/flask-app'
 
 options:
   logging: CLOUD_LOGGING_ONLY
